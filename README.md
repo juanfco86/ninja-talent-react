@@ -4,7 +4,7 @@
 
 REQUERIMIENTOS DEL CODE CHALLENGE:
 
-- Desarrollar los servicios ( RESTful) en React para  conectarse al "backend" https://my-user-manager.herokuapp.com/users
+- Desarrollar los servicios ( RESTful) en React para  conectarse al "backend" https://randomuser.me/api?results=5&noinfo
 - Desarrollar una interfaz que permita listar y ver el detalle de los usuarios.
 
 Se valorará:
