@@ -1,4 +1,4 @@
-# codechallenge-React-Junior
+# codechallenge-React-J
 
 **CODE CHALLENGE**
 
