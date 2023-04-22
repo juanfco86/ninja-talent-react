@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { MainContext } from '../Components/Context/MainContext'
 import { useParams } from 'react-router-dom'
+import BackButton from '../Components/Buttons/Close/BackButton'
 
 const Profile = () => {
     const { randomUsers } = useContext(MainContext)
@@ -11,10 +12,11 @@ const Profile = () => {
     const birthDate = new Date(findUser.dob.date);
     const registerDate = new Date(findUser.registered.date)
     const genderUppercase = findUser.gender[0].toUpperCase()
-    console.log(findUser);
 
     return (
         <>
+            <BackButton />
+            
             <div className='profile--container'>
                 <div className='profile--container__user border'>
                     <h3 className='profile--title' id="profile--title__h3">Profile</h3>
