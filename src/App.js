@@ -1,14 +1,15 @@
 import './App.css';
+import MainProvider from './Components/Context/MainProvider';
 import MainRouter from './Routes/PublicRoutes'
 
 function App() {
   return (
     <>
-      <MainContext>
+      <MainProvider>
         {/* <Header /> */}
         <MainRouter />
         {/* <Footer /> */}
-      </MainContext>
+      </MainProvider>
     </>
   );
 }

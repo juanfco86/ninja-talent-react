@@ -8,7 +8,7 @@ const Profile = () => {
 
     return (
         <>
-            Profile
+            <h2>Profile</h2>
         </>
     )
 }
