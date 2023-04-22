@@ -4,9 +4,11 @@ import MainRouter from './Routes/PublicRoutes'
 function App() {
   return (
     <>
-      {/* <Header /> */}
-      <MainRouter />
-      {/* <Footer /> */}
+      <MainContext>
+        {/* <Header /> */}
+        <MainRouter />
+        {/* <Footer /> */}
+      </MainContext>
     </>
   );
 }
