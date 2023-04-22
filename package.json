@@ -1,9 +1,31 @@
 {
+  "name": "react-junior48828",
+  "description": "**CODE CHALLENGE**",
+  "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "create-react-app": "^5.0.1"
   },
   "devDependencies": {
     "standard": "^17.0.0"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ninjatalent-world/codes/JuanFranciscoSolanoPrez21690-66638918/React-junior48828.git"
+  },
+  "author": "Juan Francisco Solano Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ninjatalent-world/codes/JuanFranciscoSolanoPrez21690-66638918/React-junior48828/issues"
+  },
+  "homepage": "https://gitlab.com/ninjatalent-world/codes/JuanFranciscoSolanoPrez21690-66638918/React-junior48828#readme"
 }
