@@ -4,25 +4,76 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 95vw;
+  height: 90vh;
+}
+
 /* HOME */
 .link--style {
   text-decoration: none;
 }
 
+.table--container {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.table--title {
+  color: white;
+  text-align: center;
+}
+
+.table--style {
+  margin: 0 auto;
+  width: 80%;
+
+}
+
 /* PROFILE */
+#profile--title__h3 {
+  position: absolute;
+  top: 0;
+  margin-top: 3.2%;
+}
+
 img {
-  width: 30%;
-  margin: 5vh 0 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+  margin: 0 0 3vh 0;
   border-radius: 10px;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+p {
+  width: 90%;
+  margin: 0 0 0.5% 2%;
+}
+
+address {
+  width: 90%;
+  margin: 0 0 0.5% 5%;
+}
+
+.profile--title {
+  background-color: #D6D6D6;
+  border-radius: 10px;
+  margin-top: 2%;
+  padding: 2%;
+  width: 95%;
 }
 
 .profile--container {
   display: grid;
   grid-template-columns: auto auto;
   gap: 1vw;
-  margin: 1vw;
+  margin: 5%;
 }
 
 .profile--container__user {
@@ -30,11 +81,49 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 15px;
   background-color: whitesmoke;
+  height: 100%;
+  position: relative;
 }
 
 .profile--container__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border-radius: 15px;
   background-color: whitesmoke;
+  padding: 1vh;
+}
+
+.profile--p__registered {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3vh 3vw 6vh 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.profile--p__dateRegistered {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3vh 2vw 3vh 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.profile--p__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 20% 0;
+}
+
+.profile--p__username {
+  padding-left: 10%;
+}
+
+p:not(:has(b)) {
+  margin-left: 5%;
 }
