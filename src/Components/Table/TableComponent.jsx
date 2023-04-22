@@ -2,6 +2,7 @@ import { Table } from 'react-bootstrap';
 import { MainContext } from '../Context/MainContext';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
+import Spinner from '../Spinner/Spinner'
 
 const TableComponent = () => {
     const { randomUsers } = useContext(MainContext)
@@ -22,18 +23,17 @@ const TableComponent = () => {
                     randomUsers ? randomUsers.results.map((user) => {
                         const userId = user.login.uuid
                         const gender = user.gender[0].toUpperCase()
-                        console.log(user);
 
                         return (
                             <tr key={userId}>
-                                <td><Link to={`/profile/${userId}`}>{user.name.first}</Link></td>
+                                <td><Link className='link--style' to={`/profile/${userId}`}>{user.name.first}</Link></td>
                                 <td>{user.email}</td>
                                 <td>{user.phone}</td>
                                 <td>{user.dob.age}</td>
                                 <td>{gender}</td>
                             </tr>
                         ) 
-                    }) : null
+                    }) : <Spinner />
                 }
             </tbody>
         </Table>
