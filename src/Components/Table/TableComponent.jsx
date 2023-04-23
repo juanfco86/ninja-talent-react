@@ -7,6 +7,10 @@ import Spinner from '../Spinner/Spinner'
 const TableComponent = () => {
     const { randomUsers } = useContext(MainContext)
 
+    if (!randomUsers) {
+        return <Spinner />
+    }
+
     return (
         <div className='table--container'>
             <Table striped bordered hover size="sm" border="1px" className='table--style'>
@@ -37,7 +41,7 @@ const TableComponent = () => {
                                     <td>{gender}</td>
                                 </tr>
                             ) 
-                        }) : <Spinner />
+                        }) : null
                     }
                 </tbody>
             </Table>
