@@ -31,7 +31,6 @@ body {
 .table--style {
   margin: 0 auto;
   width: 80%;
-
 }
 
 /* PROFILE */
@@ -80,7 +79,6 @@ address {
   grid-template-columns: auto auto;
   gap: 1vw;
   margin: auto 3%;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -115,6 +113,7 @@ address {
 }
 
 .profile--p__dateRegistered {
+  
   display: flex;
   justify-content: flex-end;
   margin: 3vh 2vw 3vh 0;
@@ -134,4 +133,50 @@ address {
 
 p:not(:has(b)) {
   margin-left: 5%;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1250px) {
+  img {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  img {
+    width: 50%;
+    margin-top: 10vh;
+  }
+
+  .profile--container {
+    grid-template-columns: auto;
+  }
+
+  .profile--container__style {
+    margin-bottom: 5vh;
+  }
+
+  .profile--p__username {
+    margin-bottom: 5vh;
+  }
+
+  .table--style td:nth-child(4)  {
+    display: none;
+  }
+
+  .table--style td:nth-child(5)  {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .table--style td:nth-child(3)  {
+    display: none;
+  }
 }

@@ -44,7 +44,7 @@ const Profile = () => {
                     <p><b>Gender:</b></p>
                     <p>{genderUppercase}</p>
                 </div>
-                <div className='profile--container__info border'>
+                <div className='profile--container__info profile--container__style border'>
                     <h4 className='profile--title'>Contact</h4>
                     <p><b>Email:</b></p>
                     <p>{findUser.email}</p>

@@ -14,7 +14,7 @@ const TableComponent = () => {
                     <tr>
                         <td colSpan={5} className='table--title bg-dark'>Random Users</td>
                     </tr>
-                    <tr>
+                    <tr className='table--style'>
                         <td>Name</td>
                         <td>Email</td>
                         <td>Phone</td>
@@ -29,7 +29,7 @@ const TableComponent = () => {
                             const gender = user.gender[0].toUpperCase()
                             
                             return (
-                                <tr key={userId}>
+                                <tr key={userId} className='table--style'>
                                     <td><Link className='link--style' to={`/profile/${userId}`}>{user.name.first}</Link></td>
                                     <td>{user.email}</td>
                                     <td>{user.phone}</td>
