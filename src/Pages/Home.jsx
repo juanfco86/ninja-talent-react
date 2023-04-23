@@ -8,7 +8,7 @@ const Home = () => {
 
     useEffect(() => {
         fetchRandomUser(setRandomUsers)
-    }, []);
+    }, [setRandomUsers]);
 
     return (
         <>
