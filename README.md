@@ -31,4 +31,34 @@ Se debe entregar:
 
 
 
+#
+#
+
+
+# Challenge Ninja Talent React
+
+- Desarrollar los servicios RESTful en React para conectarse al "backend".
+- Desarrollar una interfaz que permita listar y ver el detalle de los usuarios.
+
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+- React
+- Bootstrap
+- React-Bootstrap
+- React-DOM
+- React-Router-DOM
+- Web-Vitals
+- React-Scripts
+  
+## Instrucciones de Instalación
+
+1. Clonar este repositorio: git clone https://github.com/juanfco86/ninja-talent-react
+2. Instalar las dependencias: npm install
+3. Iniciar la aplicación: npm start
+
+## Autor
+
+Juan Francisco Solano Pérez
 
